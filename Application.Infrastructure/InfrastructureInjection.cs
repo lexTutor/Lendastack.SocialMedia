@@ -1,6 +1,7 @@
 ﻿using Application.Core.Entities;
 using Application.Infrastructure.Data.DbContext;
 using Application.Infrastructure.Data.Repository;
+using Application.Infrastructure.Data.Seed;
 using Application.Infrastructure.Logger;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -26,6 +27,8 @@ public static class InfrastructureInjection
         {
             option.UseSqlServer(connectionString);
         });
+
+        services.AddScoped<SeedDatabase>();
     }
 
     public static void AddAuthentication(this IServiceCollection services, IConfiguration Configuration)
