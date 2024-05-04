@@ -1,4 +1,5 @@
 using Application.Infrastructure.Data.DbContext;
+using Application.Infrastructure.Data.Seed;
 using Application.Infrastructure.Middleware;
 using Application.Infrastructure.Models.Configurations;
 using Application.Services;
@@ -58,6 +59,9 @@ using (var scope = app.Services.CreateScope())
 {
     var appContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
     appContext.Database.Migrate();
+
+    var seeder = scope.ServiceProvider.GetService<SeedDatabase>();
+    seeder?.SeedData().Wait();
 }
 
 app.UseResponseCompression();
