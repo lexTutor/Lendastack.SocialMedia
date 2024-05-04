@@ -361,4 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/Presentation.Api/app-logs20240505
+/Presentation.Api/app-logs*
