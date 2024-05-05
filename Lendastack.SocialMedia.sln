@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Services", "Application.Services\Application.Services.csproj", "{5AEFC07E-CD27-424C-82A7-E9C27B0CD937}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89A30355-C33F-4E5A-9BDC-896DB03D3011}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{ECA8CE9F-C883-41D6-A575-C6104A13F009}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{435E1A24-E616-4F9B-B254-7CEC679FBE53} = {89A30355-C33F-4E5A-9BDC-896DB03D3011}
+		{0BC9B356-EB34-4E5B-9DB3-4C77F4600388} = {89A30355-C33F-4E5A-9BDC-896DB03D3011}
+		{B380FAE4-3537-4EE5-AF0D-668D8429FCAF} = {89A30355-C33F-4E5A-9BDC-896DB03D3011}
+		{BC18775E-92FF-4C8F-B75F-A6494B3FA0F5} = {ECA8CE9F-C883-41D6-A575-C6104A13F009}
+		{5AEFC07E-CD27-424C-82A7-E9C27B0CD937} = {89A30355-C33F-4E5A-9BDC-896DB03D3011}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2AB03C43-EDDC-4BB0-9F52-AAB124C6D908}
